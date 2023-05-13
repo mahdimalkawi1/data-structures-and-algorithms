@@ -52,13 +52,15 @@ def test_linked_listlinked_that_not_exists():
     
 
 def test_linked_list_values():
-    ll = linked_list()
+     node_l = Node("Hi")
+     node_M = Node("Mahdi", node_l)
+     ll_ = linked_list(node_M)
+     output =ll_.to_string ()
 
-    ll.insert("mahdi")
-    ll.insert("hi")
-    ll.insert("hello")
+     actual = output
+     expected = "{ Mahdi }-> { Hi }->  None "
+     assert actual == expected
 
-    expected = "{ mahdi } -> { hi } -> { hello } -> None"
-    actual = ll.to_string()
-    assert actual == expected
+    
+    
 
