@@ -18,7 +18,6 @@ class linked_list:
          new_node.next = self.head
          self.head = new_node
 
-
          
     def includes(self, value):
      current = self.head
