@@ -28,6 +28,7 @@ class linked_list:
         current = current.next
      return False
 
+
     def to_string(self):
         current = self.head
         string = ""
