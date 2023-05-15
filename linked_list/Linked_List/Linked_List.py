@@ -10,10 +10,14 @@ class linked_list:
         self.head = head
 
 
-    def insert (self, value) : 
-         new_node = Node(value)
+    def insert(self, value):
+     new_node = Node(value)
+     if self.head is None: 
+        self.head = new_node
+     else:
          new_node.next = self.head
-         self.head = new_node.value
+         self.head = new_node
+
 
          
     def includes(self, value):
