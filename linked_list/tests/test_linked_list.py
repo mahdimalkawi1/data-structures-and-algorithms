@@ -11,9 +11,10 @@ def test_empty_linked_list():
 def test_insert_into_the_linked_list():
      test2 = linked_list()
      test2.insert("mahdi")
-     actual = test2.head
+     actual = test2.head.value  
      expected = "mahdi"
      assert actual == expected
+
 
 def test_point_to_the_first_node():
      node_l = Node("Hi")
@@ -102,6 +103,7 @@ def test_insert_after_in_linked_list():
 
 
 
+    
     
     
 
