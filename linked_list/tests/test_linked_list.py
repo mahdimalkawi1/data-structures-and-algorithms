@@ -62,6 +62,47 @@ def test_linked_list_values():
      expected = "{ Mahdi }-> { Hi }->  None "
      assert actual == expected
 
+def test_append_to_the_linked_list():
+    node1 = Node(1)
+    node2 = Node(3)
+    node3 = Node(2)
+    node1.next = node2
+    node2.next = node3
+
+    my_list = linked_list(node1)
+    my_list.append(5)
+    actual = my_list.to_string()
+    expected = "{ 1 }-> { 3 }-> { 2 }-> { 5 }->  None "
+    assert actual == expected, f"Expected: {expected}, Actual: {actual}"
+
+def test_insert_before_in_linked_list():
+    node1 = Node(1)
+    node2 = Node(3)
+    node3 = Node(2)
+
+    node1.next = node2
+    node2.next = node3
+    my_list = linked_list(node1)
+    my_list.insert_before(3, 5)
+    actual = my_list.to_string()
+    expected = "{ 1 }-> { 5 }-> { 3 }-> { 2 }->  None "
+    assert actual == expected, f"Expected: {expected}, Actual: {actual}"
+
+def test_insert_after_in_linked_list():
+    node1 = Node(1)
+    node2 = Node(3)
+    node3 = Node(2)
+    node1.next = node2
+    node2.next = node3
+    my_list = linked_list(node1)
+    my_list.insert_after(3, 5)
+    actual = my_list.to_string()
+    expected = "{ 1 }-> { 3 }-> { 5 }-> { 2 }->  None "
+    assert actual == expected, f"Expected: {expected}, Actual: {actual}"
+
+
+
+
     
     
     
