@@ -73,5 +73,16 @@ class linked_list:
                 return
             current = current.next
 
+    def kth  (self,k):
+        current=self.head
+        list=[]
+        while current != None:
+            list.insert(0, current.value)
+            current=current.next 
+
+        if k<=len(list):
+            return(list[k]) 
+        else:
+            raise Exception("Index out of range.")
 
 
