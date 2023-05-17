@@ -101,7 +101,53 @@ def test_insert_after_in_linked_list():
     assert actual == expected, f"Expected: {expected}, Actual: {actual}"
 
 
+def testkth():
+    ll = linked_list(Node(5))
+    ll.insert(6)
+    ll.insert(9)
+    ll.insert(8)
+    ll.insert(15)
+    print(ll.tostring ())
+    index=ll.kth(2)
+    actual = index
+    expected = 9
+    assert actual == expected
 
+def testkth2():
+    ll = linked_list(Node(5))
+    ll.insert(6)
+    ll.insert(9)
+    ll.insert(8)
+    ll.insert(15)
+    print(ll.tostring ())
+    index=ll.kth(-1)
+    actual = index
+    expected =  15
+    assert actual == expected
+
+def testkth3():
+    ll = linked_list(Node(5))
+    ll.insert(6)
+    ll.insert(9)
+    ll.insert(8)
+    ll.insert(15)
+    print(ll.tostring ())
+    index=ll.kth(4)
+    actual = index
+    expected =  15
+    assert actual == expected
+
+def testkth4():
+    ll = linked_list(Node(5))
+    ll.insert(6)
+    ll.insert(9)
+    ll.insert(8)
+    ll.insert(15)
+    print(ll.tostring ())
+
+    with pytest.raises(Exception) as error:
+        ll.kth(50)
+    assert str(error.value) == "Index out of range."
 
     
     
