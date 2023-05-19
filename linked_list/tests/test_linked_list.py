@@ -107,23 +107,23 @@ def testkth():
     ll.insert(9)
     ll.insert(8)
     ll.insert(15)
-    print(ll.tostring ())
+    print(ll.to_string ())
     index=ll.kth(2)
     actual = index
     expected = 9
     assert actual == expected
 
-def testkth2():
-    ll = linked_list(Node(5))
-    ll.insert(6)
-    ll.insert(9)
-    ll.insert(8)
-    ll.insert(15)
-    print(ll.tostring ())
-    index=ll.kth(-1)
-    actual = index
-    expected =  15
-    assert actual == expected
+# def testkth2():
+#     ll = linked_list(Node(5))
+#     ll.insert(6)
+#     ll.insert(9)
+#     ll.insert(8)
+#     ll.insert(15)
+#     print(ll.to_string ())
+#     index=ll.kth(-1)
+#     actual = index
+#     expected =  15
+#     assert actual == expected
 
 def testkth3():
     ll = linked_list(Node(5))
@@ -131,7 +131,7 @@ def testkth3():
     ll.insert(9)
     ll.insert(8)
     ll.insert(15)
-    print(ll.tostring ())
+    print(ll.to_string ())
     index=ll.kth(4)
     actual = index
     expected =  15
@@ -143,11 +143,23 @@ def testkth4():
     ll.insert(9)
     ll.insert(8)
     ll.insert(15)
-    print(ll.tostring ())
+    print(ll.to_string ())
 
     with pytest.raises(Exception) as error:
         ll.kth(50)
     assert str(error.value) == "Index out of range."
+
+def testkth5():
+    ll = linked_list(Node(5))
+    ll.insert(6)
+    ll.insert(9)
+    ll.insert(8)
+    ll.insert(15)
+    print(ll.to_string ())
+
+    with pytest.raises(Exception) as error:
+        ll.kth(-1)
+    assert str(error.value) == "Negative value not accepted."
 
     
     
