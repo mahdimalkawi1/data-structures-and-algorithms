@@ -80,7 +80,9 @@ class linked_list:
             list.insert(0, current.value)
             current=current.next 
 
-        if k<=len(list):
+        if k < 0:
+            raise Exception ("Negative value not accepted.")
+        elif k<=len(list):
             return(list[k]) 
         else:
             raise Exception("Index out of range.")
