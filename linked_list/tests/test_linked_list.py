@@ -1,6 +1,8 @@
 import pytest
 
 from Linked_List.Linked_List import (Node , linked_list)
+from Linked_List.Linked_List import zipLists
+
 
 def test_empty_linked_list():
     test = linked_list()
@@ -161,6 +163,67 @@ def testkth5():
         ll.kth(-1)
     assert str(error.value) == "Negative value not accepted."
 
+def test_zipLists_equal_length():
+    list1 = linked_list()
+    list1.append(1)
+    list1.append(3)
+    list1.append(5)
+
+    list2 = linked_list()
+    list2.append(2)
+    list2.append(4)
+    list2.append(6)
+
+    result = zipLists(list1, list2)
+    expected = [1, 2, 3, 4, 5, 6]
+    assert result.to_list() == expected, f"Expected: {expected}, Actual: {result.to_list()}"
+
+def test_zipLists_different_lengths():
+    list1 = linked_list()
+    list1.append(1)
+    list1.append(3)
+    list1.append(5)
+
+    list2 = linked_list()
+    list2.append(2)
+    list2.append(4)
+
+    result = zipLists(list1, list2)
+    expected = [1, 2, 3, 4, 5]
+    assert result.to_list() == expected, f"Expected: {expected}, Actual: {result.to_list()}"
+
+def test_zipLists_one_empty_list():
+    list1 = linked_list()
+    list1.append(1)
+    list1.append(3)
+    list1.append(5)
+
+    list2 = linked_list()
+
+    result = zipLists(list1, list2)
+    expected = [1, 3, 5]
+    assert result.to_list() == expected, f"Expected: {expected}, Actual: {result.to_list()}"
+
+def test_zipLists_both_empty_lists():
+    list1 = linked_list()
+    list2 = linked_list()
+
+    result = zipLists(list1, list2)
+    expected = []
+    assert result.to_list() == expected, f"Expected: {expected}, Actual: {result.to_list()}"
+
+def test_zipLists_different_types():
+    list1 = linked_list()
+    list1.append("apple")
+    list1.append("banana")
+
+    list2 = linked_list()
+    list2.append(1)
+    list2.append(2)
+
+    result = zipLists(list1, list2)
+    expected = ["apple", 1, "banana", 2]
+    assert result.to_list() == expected, f"Expected: {expected}, Actual: {result.to_list()}"
     
     
     
