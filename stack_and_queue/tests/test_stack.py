@@ -64,10 +64,10 @@ def test_Stack_pop_():
     stack_01= Stack()
     with pytest.raises(Exception) as error:
        stack_01.pop()
-    assert str(error.value) == "The stack is empty"
+    assert str(error.value) == "The stack is empty."
     
 def test_Stack_peek ():
     stack_01= Stack()
     with pytest.raises(Exception) as error:
        stack_01.peek()
-    assert str(error.value) == "The stack is empty"
+    assert str(error.value) == "The stack is empty."
