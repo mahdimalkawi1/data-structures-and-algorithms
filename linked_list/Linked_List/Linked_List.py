@@ -87,43 +87,7 @@ class linked_list:
         else:
             raise Exception("Index out of range.")
         
-    def zipLists(self, list1, list2):
-        """
-        Zips two linked lists together by alternating nodes from each list.
-
-        Args:
-            list1: The first linked list.
-            list2: The second linked list.
-
-        Returns:
-            A new linked list containing the nodes alternated from both input lists.
-        """
-        if list1.head is None:
-            return list2
-        if list2.head is None:
-            return list1
-
-        current1 = list1.head
-        current2 = list2.head
-        new_list = linked_list()
-
-        while current1 and current2:
-            new_list.append(current1.value)
-            new_list.append(current2.value)
-            current1 = current1.next
-            current2 = current2.next
-
-        if current1:
-            while current1:
-                new_list.append(current1.value)
-                current1 = current1.next
-        elif current2:
-            while current2:
-                new_list.append(current2.value)
-                current2 = current2.next
-
-        return new_list
-
+    
 
     
 
