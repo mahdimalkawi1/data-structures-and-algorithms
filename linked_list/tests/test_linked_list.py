@@ -2,6 +2,7 @@ import pytest
 
 from Linked_List.Linked_List import (Node , linked_list)
 
+
 def test_empty_linked_list():
     test = linked_list()
     actual = test.head
@@ -161,7 +162,5 @@ def testkth5():
         ll.kth(-1)
     assert str(error.value) == "Negative value not accepted."
 
-    
-    
-    
+
 

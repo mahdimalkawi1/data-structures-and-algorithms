@@ -86,5 +86,8 @@ class linked_list:
             return(list[k]) 
         else:
             raise Exception("Index out of range.")
+        
+    
 
+    
 
