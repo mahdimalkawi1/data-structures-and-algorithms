@@ -63,10 +63,10 @@ def test_Queue_dequeues_():
     Queue_01= Queue()
     with pytest.raises(Exception) as error:
        Queue_01.dequeue()
-    assert str(error.value) == "the queue is empty"
+    assert str(error.value) == 'The Queue is empty.'
     
 def test_Queue_peek ():
     Queue_01= Queue()
     with pytest.raises(Exception) as error:
        Queue_01.peek()
-    assert str(error.value) == "the queue is empty"
+    assert str(error.value) == 'The Queue is empty.'
