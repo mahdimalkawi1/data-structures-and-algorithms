@@ -4,6 +4,8 @@
 4. [ stack_and_queue](./stack_and_queue/stack_and_queue.md)
 5. [ linked_list_zip](./linked-list-zip/zipLists.md)
 6. [ pseudo_queue](./stack_and_queue/stack_and_queue/%20pseudo_queue.md)
+7. [ stack_queue_animal_shelter](./stack_and_queue/stack_and_queue/stack_queue_animal_shelter.md)
+
 
 
 
