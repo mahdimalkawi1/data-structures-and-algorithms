@@ -7,6 +7,8 @@
 7. [ stack_queue_animal_shelter](./stack_and_queue/stack_and_queue/stack_queue_animal_shelter.md)
 8. [ validate_brackets_used_stack](./stack_and_queue/stack_and_queue/validate_brackets_used_stack.md)
 9. [ Trees](./stack_and_queue/stack_and_queue/trees/trees.md)
+10. [ Max Value](./stack_and_queue/stack_and_queue/trees/Max.md)
+
 
 
 
