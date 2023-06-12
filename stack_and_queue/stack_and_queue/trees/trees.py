@@ -21,6 +21,7 @@ class binary_tree:
         """
     def __init__(self):
         self.root = None
+        self.max = None
 
     def breadth_first(self):
         if not self.root:
@@ -113,7 +114,21 @@ class binary_tree:
 
         _walk(self.root)
         return arr
+    
+    def max_value(self):
+        """ find and returns the maximum value in a binary tree."""
 
+        self.max = self.root.value
+        def _walk(root):
+            if root.value > self.max:
+                self.max = root.value       
+            if root.left:
+                _walk(root.left)
+            if root.right:
+                _walk(root.right)
+        _walk(self.root)
+        return self.max
+    
 
 class BinarySearchTree(binary_tree):
     def __init__(self):
@@ -179,8 +194,12 @@ if __name__ == "__main__":
     tree.add(40)
     tree.add(60)
 
-    print(tree.pre_order())
+    # print(tree.pre_order())
+    # print("###############")
+    # print(tree.in_order())
+    # print("###############")
+    # print(tree.post_order())
     print("###############")
-    print(tree.in_order())
-    print("###############")
-    print(tree.post_order())
+    print(tree.max_value())
+    
+

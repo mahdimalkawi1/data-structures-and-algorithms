@@ -1,5 +1,5 @@
 import pytest
-from stack_and_queue.queue import Queue  # Import Queue class from the appropriate module
+from stack_and_queue.queue import Queue  
 from stack_and_queue.trees.trees import BinarySearchTree 
 
 def test_instantiate_empty_tree():
