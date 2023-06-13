@@ -4,7 +4,7 @@
 
 ## Whiteboard Process
 
-![ white board](./assetss/Untitled%20(24).jpg)
+![ white board](./assetss/Untitled%20(25).jpg)
 
 
 ## Approach & Efficiency
