@@ -4,7 +4,7 @@
 
 ## Whiteboard Process
 
-![ white board](./assetss/Untitled%20(24).jpg)
+![ white board](./assetss/Untitled%20(25).jpg)
 
 
 ## Approach & Efficiency
@@ -31,3 +31,13 @@ The space complexity of the code is O(1).
         _walk(self.root)
         return self.max
 ``` 
+
+### Test Cases: 
+- input:
+2 -> 7 -> 5 -> 6 -> 9 -> 4 -> 11
+- output:
+11
+- input:
+10-> 5-> 8
+- output:
+10
