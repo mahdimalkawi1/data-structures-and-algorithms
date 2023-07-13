@@ -10,6 +10,8 @@
 10. [ Max Value](./stack_and_queue/stack_and_queue/trees/Max.md)
 
 11. [ Sorting/insertion](./sorting/insertion/README.md)
+12. [ Sorting/merge](./sorting/merge/README.md)
+
 
 
 
