@@ -8,9 +8,10 @@
 8. [ validate_brackets_used_stack](./stack_and_queue/stack_and_queue/validate_brackets_used_stack.md)
 9. [ Trees](./stack_and_queue/stack_and_queue/trees/trees.md)
 10. [ Max Value](./stack_and_queue/stack_and_queue/trees/Max.md)
-
 11. [ Sorting/insertion](./sorting/insertion/README.md)
 12. [ Sorting/merge](./sorting/merge/README.md)
+13. [ Sorting/comparisons](./sorting/comparisons/README.md)
+
 
 
 
