@@ -11,6 +11,9 @@
 11. [ Sorting/insertion](./sorting/insertion/README.md)
 12. [ Sorting/merge](./sorting/merge/README.md)
 13. [ Sorting/comparisons](./sorting/comparisons/README.md)
+14. [ hash_tables](./Hash-Tables/hash_tables.md)
+15. [ hashmap repeated word](./hashmap_repeated_word/README.md)
+
 
 
 
