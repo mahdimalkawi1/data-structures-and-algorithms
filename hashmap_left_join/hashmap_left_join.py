@@ -143,12 +143,15 @@ class HashTable:
     return False
 
 
- 
-def left_join(hashTable1, hashTable2):
+def left_join(hashmap1, hashmap2):
     '''
     A method to perform a left join between two hashtables.
     args: hashTable1, hashTable2
-    output: a list of tuples of the form (key, value1, value2)
+    output: a list of tuples of the form 
     '''
-    output = [[key, hashTable1.get(key), hashTable2.get(key, None)] for key in hashTable1.keys()]
-    return output
+    results = []
+    for key in hashmap1:
+        value1 = hashmap1[key]
+        value2 = hashmap2.get(key, None)
+        results.append([key, value1, value2])
+    return results

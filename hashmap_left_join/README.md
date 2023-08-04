@@ -5,7 +5,7 @@ Write a function that LEFT JOINs two hashmaps into a single data structure.
 
 ## Whiteboard Process
 
-![ white board](./assets/Untitled%20(33).jpg)
+![ white board](./assets/Untitled%20(36).jpg)
 
 ## Approach & Efficiency
 
